@@ -11,5 +11,6 @@
             $this->assertEquals('MARIA ANTUNES', Words::removeAcentos('Maria Antuñes', true));
             $this->assertEquals('JOSE BENEDITO', Words::removeAcentos('José Benedito', true));
             $this->assertEquals('Roberto Gomez Bolanos', Words::removeAcentos('Roberto Gómez Boláños'));
+            $this->assertEquals('MARIA DAS GRACAS GONCALVES', Words::removeAcentos('MARIA DAS GRAÇAS GONÇALVES', true));
         }
     }
