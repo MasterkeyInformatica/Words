@@ -29,8 +29,8 @@
      * diversas
      *
      * @author  Matheus Lopes Santos <fale_com_lopez@hotmail.com>
-     * @version 1.0.0
-     * @since   02/03/2016
+     * @version 1.0.2
+     * @since   10/03/2016
      */
     class Words
     {
@@ -38,7 +38,7 @@
          * Remove os acentos e caracteres especiais de uma string. Ainda pode
          * devolvê-la em UpperCase, caso o usuário desejar
          *
-         * @since   1.0.0 - 02/03/2016
+         * @since   1.0.2 - 10/03/2016
          * @param   string  $string
          * @return  string
          */
@@ -46,6 +46,9 @@
         {
             // Decodifica a string para que a função funcione corretamente
 			$texto = utf8_decode($string);
+
+            // Recebe a string e força a mesma para minúsculo
+            $string = strtolower($string);
 
 			// Código ASCII das vogais
 			$ascii['a'] = range(224, 230);
